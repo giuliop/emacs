@@ -34,39 +34,40 @@
   '(;; makes handling lisp expressions much, much easier
     ;; Cheatsheet: http://www.emacswiki.org/emacs/PareditCheatsheet
     paredit
-
     ;; key bindings and code colorization for Clojure
     ;; https://github.com/clojure-emacs/clojure-mode
     clojure-mode
-
     ;; extra syntax highlighting for clojure
     clojure-mode-extra-font-locking
-
     ;; integration with a Clojure REPL
     ;; https://github.com/clojure-emacs/cider
     cider
-
+    ;; incremental completion
+    helm
     ;; allow ido usage in as many contexts as possible. see
-    ;; customizations/navigation.el line 23 for a description
-    ;; of ido
+    ;; customizations/navigation.el line 23 for a description of ido
     ido-ubiquitous
-
     ;; Enhances M-x to allow easier execution of commands. Provides
     ;; a filterable list of possible commands in the minibuffer
     ;; http://www.emacswiki.org/emacs/Smex
     smex
-
     ;; project navigation
     projectile
-
     ;; colorful parenthesis matching
     rainbow-delimiters
-
     ;; edit html tags like sexps
     tagedit
+    ;; vim mode thank you very much
+    evil
+    evil-nerd-commenter
+    linum-relative
 
+    ;; a nice color theme
+    moe-theme
+ 
     ;; git integration
-    magit))
+    ;; magit
+    ))
 
 ;; On OS X, an Emacs instance started from the graphical user
 ;; interface will have a different environment than a shell in a
@@ -106,6 +107,14 @@
 ;; below, Emacs knows where to look for the corresponding file.
 (add-to-list 'load-path "~/.emacs.d/customizations")
 
+;; helm
+(require 'helm-config)
+(helm-mode 1)
+
+;; Evil mode
+(evil-mode t)
+(load "evil-settings.el")
+
 ;; Sets up exec-path-from-shell so that Emacs will use the correct
 ;; environment variables
 (load "shell-integration.el")
@@ -130,3 +139,6 @@
 ;; Langauage-specific
 (load "setup-clojure.el")
 (load "setup-js.el")
+
+;; Mappings
+(load "mappings.el")
