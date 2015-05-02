@@ -4,17 +4,11 @@
 
 ;; Define package repositories
 (require 'package)
-(add-to-list 'package-archives
-             '("marmalade" . "http://marmalade-repo.org/packages/") t)
-(add-to-list 'package-archives
-             '("tromey" . "http://tromey.com/elpa/") t)
-(add-to-list 'package-archives
-             '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
-;; (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-;;                          ("marmalade" . "http://marmalade-repo.org/packages/")
-;;                          ("melpa" . "http://melpa-stable.milkbox.net/packages/")))
-
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+                         ("marmalade" . "http://marmalade-repo.org/packages/")
+                         ("tromey" . "http://tromey.com/elpa/")
+                         ("melpa" . "http://melpa-stable.milkbox.net/packages/")))
 
 ;; Load and activate emacs packages. Do this first so that the
 ;; packages are loaded before you start trying to modify them.
@@ -110,9 +104,10 @@
 ;; helm
 (require 'helm-config)
 (helm-mode 1)
+(load "helm-settings.el")
 
 ;; Evil mode
-(evil-mode t)
+(evil-mode 1)
 (load "evil-settings.el")
 
 ;; Sets up exec-path-from-shell so that Emacs will use the correct

@@ -15,3 +15,26 @@
 
 ;to activate default evil-nerd-commenter hotkeys
 (evilnc-default-hotkeys)
+
+; move across windows
+(define-key evil-normal-state-map (kbd "C-h") 'evil-window-left)
+(define-key evil-normal-state-map (kbd "C-j") 'evil-window-down)
+(define-key evil-normal-state-map (kbd "C-k") 'evil-window-up)
+(define-key evil-normal-state-map (kbd "C-l") 'evil-window-right)
+
+; Make horizontal movement cross lines                                    
+(setq-default evil-cross-lines t)
+
+; swap : and ;
+(define-key evil-normal-state-map (kbd ";") 'evil-ex)
+(define-key evil-normal-state-map (kbd ":") 'evil-repeat-find-char)
+
+; regain some emacs commands (losing scrolling without moving cursor)
+(define-key evil-normal-state-map "\C-y" 'yank)
+(define-key evil-insert-state-map "\C-y" 'yank)
+(define-key evil-visual-state-map "\C-y" 'yank)
+(define-key evil-insert-state-map "\C-e" 'end-of-line)
+(define-key evil-normal-state-map "\C-w" 'evil-delete)
+(define-key evil-insert-state-map "\C-w" 'evil-delete)
+(define-key evil-insert-state-map "\C-r" 'search-backward)
+(define-key evil-visual-state-map "\C-w" 'evil-delete)
