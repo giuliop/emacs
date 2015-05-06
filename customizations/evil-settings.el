@@ -4,7 +4,7 @@
 ;(define-key evil-insert-state-map (kbd "C-c") 'evil-normal-state)
 
 ; .. to cycle through buffers in current window
-(define-key evil-normal-state-map (kbd ",,") 'evil-buffer)
+(define-key evil-normal-state-map (kbd ",m") 'evil-buffer)
 
 ; disable q for macro recording to keep it for emacs
 (define-key evil-normal-state-map (kbd "q") nil)
@@ -34,6 +34,7 @@
 (define-key evil-insert-state-map "\C-y" 'yank)
 (define-key evil-visual-state-map "\C-y" 'yank)
 (define-key evil-insert-state-map "\C-e" 'end-of-line)
+(define-key evil-normal-state-map "\C-e" 'end-of-line)
 (define-key evil-normal-state-map "\C-w" 'evil-delete)
 (define-key evil-insert-state-map "\C-w" 'evil-delete)
 (define-key evil-insert-state-map "\C-r" 'search-backward)

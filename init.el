@@ -137,3 +137,7 @@
 
 ;; Mappings
 (load "mappings.el")
+
+;; tmux stuff
+(load "tmux.el")
+
