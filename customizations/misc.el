@@ -10,3 +10,8 @@
 
 ;; Go straight to scratch buffer on startup
 (setq inhibit-startup-message t)
+
+;; scratch buffer is a Clojure buffer
+(setq initial-major-mode 'clojure-mode)
+
+(setq initial-scratch-message "; SCRATCH\n\n")

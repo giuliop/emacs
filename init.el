@@ -56,8 +56,9 @@
     evil-nerd-commenter
     linum-relative
 
-    ;; a nice color theme
+    ;; nice color themes
     moe-theme
+    ample-theme
  
     ;; git integration
     ;; magit
@@ -141,3 +142,19 @@
 ;; tmux stuff
 (load "tmux.el")
 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])
+ '(ansi-color-names-vector (vector "#c5c8c6" "#cc6666" "#b5bd68" "#f0c674" "#81a2be" "#b294bb" "#8abeb7" "#1d1f21"))
+ '(coffee-tab-width 2)
+ '(custom-safe-themes (quote ("42ccd5eadda3546a89026b94794df7f4addadf25417b96917cf9db2f892b25a4" "1157a4055504672be1df1232bed784ba575c60ab44d8e6c7b3800ae76b42f8bd" "9e54a6ac0051987b4296e9276eecc5dfb67fdcd620191ee553f40a9b6d943e78" "5d7259c91126145dc0840dffada98f417c84c2c50d251a4e9ad959acf762aac4" default)))
+ '(fci-rule-color "#282a2e"))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
