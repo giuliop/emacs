@@ -9,7 +9,8 @@
                          ("marmalade" . "http://marmalade-repo.org/packages/")
                          ("tromey" . "http://tromey.com/elpa/")
                          ("melpa" . "http://melpa.milkbox.net/packages/")
-                         ("melpa-stable" . "http://melpa-stable.milkbox.net/packages/")))
+                         ("melpa-st" . "http://melpa-stable.milkbox.net/packages/")
+                         ))
 
 ;; Load and activate emacs packages. Do this first so that the
 ;; packages are loaded before you start trying to modify them.
