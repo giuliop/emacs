@@ -25,9 +25,7 @@
 ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Custom-Themes.html
 ;; for a more technical explanation.
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-;; (add-to-list 'custom-theme-load-path "~/.emacs.d/elpa/moe-theme-20150307.1907")
 (add-to-list 'load-path "~/.emacs.d/themes")
-;(add-to-list 'load-path "~/.emacs.d/moe-theme-20150307.1907")
 (load-theme 'moe-dark t)
 
 ;; increase font size for better readability

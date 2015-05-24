@@ -8,6 +8,7 @@
 
 ; disable q for macro recording to keep it for emacs
 (define-key evil-normal-state-map (kbd "q") nil)
+(define-key evil-normal-state-map (kbd "Q") 'evil-record-macro)
 
 ; C-u to scroll up
 (define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-up)
