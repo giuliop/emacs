@@ -8,7 +8,7 @@
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")
                          ("tromey" . "http://tromey.com/elpa/")
-                         ;("melpa" . "http://melpa.milkbox.net/packages/")
+                         ("melpa" . "http://melpa.milkbox.net/packages/")
                          ("melpa-st" . "http://melpa-stable.milkbox.net/packages/")
                          ))
 
