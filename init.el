@@ -60,7 +60,7 @@
 
     ;; nice color themes
     moe-theme
- 
+
     ;; git integration
     ;; magit
     ))
