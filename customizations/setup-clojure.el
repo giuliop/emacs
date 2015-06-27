@@ -2,6 +2,9 @@
 ;; Clojure
 ;;;;
 
+;; to be safe
+;; (require 'cl)
+
 ;; Enable paredit for Clojure
 (add-hook 'clojure-mode-hook 'enable-paredit-mode)
 
@@ -79,4 +82,7 @@
      (define-key clojure-mode-map (kbd "C-c C-v") 'cider-start-http-server)
      (define-key clojure-mode-map (kbd "C-M-r") 'cider-refresh)
      (define-key clojure-mode-map (kbd "C-c u") 'cider-user-ns)
-     (define-key cider-mode-map (kbd "C-c u") 'cider-user-ns)))
+     (define-key cider-mode-map (kbd "C-c u") 'cider-user-ns)
+     ;; <up> and <down> to navigate repl history
+     (define-key cider-repl-mode-map (kbd "<up>") 'cider-repl-previous-input)
+     (define-key cider-repl-mode-map (kbd "<down>") 'cider-repl-next-input)))
