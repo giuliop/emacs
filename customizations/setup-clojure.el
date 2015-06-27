@@ -2,9 +2,6 @@
 ;; Clojure
 ;;;;
 
-;; to be safe
-;; (require 'cl)
-
 ;; Enable paredit for Clojure
 (add-hook 'clojure-mode-hook 'enable-paredit-mode)
 
@@ -67,7 +64,6 @@
     (cider-repl-set-ns ns)
     (cider-interactive-eval (format "(println '(def server (%s/start))) (println 'server)" ns))
     (cider-interactive-eval (format "(def server (%s/start)) (println server)" ns))))
-
 
 (defun cider-refresh ()
   (interactive)
