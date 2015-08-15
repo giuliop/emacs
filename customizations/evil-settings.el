@@ -14,9 +14,6 @@
 (define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-up)
 (define-key evil-visual-state-map (kbd "C-u") 'evil-scroll-up)
 
-;to activate default evil-nerd-commenter hotkeys
-(evilnc-default-hotkeys)
-
 ; move across windows
 (define-key evil-normal-state-map (kbd "C-h") 'evil-window-left)
 (define-key evil-normal-state-map (kbd "C-j") 'evil-window-down)
@@ -72,3 +69,9 @@
 (define-key evil-insert-state-map (kbd "C-k") 'paredit-forward-barf-sexp)
 (define-key evil-insert-state-map (kbd "M-k") 'paredit-backward-slurp-sexp)
 (define-key evil-insert-state-map (kbd "M-l") 'paredit-backward-barf-sexp)
+
+
+;to activate default evil-nerd-commenter hotkeys
+;; (evilnc-default-hotkeys)
+(define-key evil-normal-state-map ",ci" 'evilnc-comment-or-uncomment-lines)
+(evilnc-toggle-invert-comment-line-by-line)
