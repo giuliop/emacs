@@ -60,6 +60,9 @@
 
     ;; nice color themes
     moe-theme
+    
+    ;; haskell baby
+    haskell-mode
 
     ;; git integration
     ;; magit
